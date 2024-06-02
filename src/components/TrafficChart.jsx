@@ -18,8 +18,8 @@ function TrafficChart({ data = [] }) {
   }));
 
   return (
-    <ResponsiveContainer width="100%" height={300}>
-      <LineChart data={parsedData}>
+    <ResponsiveContainer width="80%" height={300}>
+      <LineChart  margin={{ top: 20, right: 20, bottom: 20, left: 20 }} data={parsedData}>
         <CartesianGrid strokeDasharray="3 3" stroke="#444" />
         <XAxis
           dataKey="timestamp"
